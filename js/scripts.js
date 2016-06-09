@@ -1,12 +1,23 @@
 var cryptoSquare = function(sentence) {
   var inputArr;
-  inputArr = sentence.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()' '0-9]/g,"");
+  debugger;
+  inputArr = sentence.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()' '0-9]/g,"").toLowerCase();
+
+  var firstArray= inputArr.split("");
+  var rows= Math.ceil(Math.sqrt(firstArray.length));
+  var columns = rows;
+
+  alert(rows);
+
+  for (var i = 0; i < firstArray.length; i++) {
+
+  }
 
 
 
 
 
-  return inputArr;
+  return firstArray;
 };
 
 
